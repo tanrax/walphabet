@@ -1,5 +1,7 @@
 # Walphabet
 
+<img src="icon.png" width="100" alt="Icon">
+
 Transform your fonts from TTF or OTF to WOFF2.
 
 # Download
