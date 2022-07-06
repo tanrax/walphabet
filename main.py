@@ -4,9 +4,11 @@ import pygubu
 import tkinter as tk
 from tkinter import filedialog
 import subprocess
+import os
 
 PROJECT_PATH = pathlib.Path(__file__).parent
-PROJECT_UI = PROJECT_PATH / "main_window.ui"
+
+PROJECT_UI = os.path.join(PROJECT_PATH, "main_window.ui")
 
 
 class MainWindowApp:

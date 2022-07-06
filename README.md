@@ -29,13 +29,13 @@ pip3 install -r requirements.txt
 ### Linux
 
 ```bash
-pyinstaller main.py --onefile --windowed
+pyinstaller main.spec
 ```
 
 ### Windows
 
 ```bash
-venv\Scripts\pyinstaller.exe main.py --onefile --windowed
+venv\Scripts\pyinstaller.exe main.spec
 ```
 
 ### MacOS
@@ -49,7 +49,7 @@ brew install python-tk
 Next.
 
 ```bash
-pyinstaller run.py --onefile --windowed
+pyinstaller main.spec
 ```
 
 ## 3. Run
