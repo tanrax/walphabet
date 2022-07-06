@@ -4,6 +4,10 @@
 
 Transform your fonts from TTF or OTF to WOFF2.
 
+<p align="center">
+  <img src="assets/preview.png" width="600" alt="demo">
+</p>
+
 # Download
 
 Linux -> https://github.com/tanrax/walphabet/releases/download/v1.0/walphabet-linux
