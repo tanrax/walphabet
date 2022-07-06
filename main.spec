@@ -3,13 +3,26 @@
 
 block_cipher = None
 
+# specify pygubu modules
+hidden_imports = [
+    'pygubu.builder.tkstdwidgets',
+    'pygubu.builder.ttkstdwidgets',
+    'pygubu.builder.widgets.dialog',
+    'pygubu.builder.widgets.editabletreeview',
+    'pygubu.builder.widgets.scrollbarhelper',
+    'pygubu.builder.widgets.scrolledframe',
+    'pygubu.builder.widgets.tkscrollbarhelper',
+    'pygubu.builder.widgets.tkscrolledframe',
+    'pygubu.builder.widgets.pathchooserinput',
+]
+
 
 a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[('bin/linux/woff2_compress', 'bin/linux/woff2_compress')],
-    datas=[("main_window.ui", "main_window.ui")],
-    hiddenimports=[],
+    datas=[("main_window.ui", ".")],
+    hiddenimports=hidden_imports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

@@ -1,1 +1,2 @@
 pygubu==0.22
+pyinstaller==5.1
