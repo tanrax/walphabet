@@ -3,6 +3,7 @@ import pathlib
 import pygubu
 import tkinter as tk
 from tkinter import filedialog
+import subprocess
 
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "main_window.ui"
@@ -23,7 +24,7 @@ class MainWindowApp:
     def open_dialog(self):
         filenames = filedialog.askopenfilename(
             title="Select a Font files",
-            filetypes=(("OTF files", "*.otf"), ("TTF files", "*.ttf")),
+            filetypes=(("TTF files", "*.ttf"), ("OTF files", "*.otf"), ("All files", "*.*")),
             multiple=True,
         )
         self.transform_fonts(filenames)
@@ -31,12 +32,18 @@ class MainWindowApp:
     def transform_fonts(self, filenames):
         progress_bar = self.mainwindow.nametowidget("!progressbar")
         for index, filename in enumerate(filenames):
+            args = ("./bin/linux/woff2_compress", filename)
+            popen = subprocess.Popen(args, stdout=subprocess.PIPE)
+            popen.wait()
             # Show progress bar
             progress_bar.place(x=0)
             # Update progress bar
-            progress_bar["value"] = index * 100 / (len(filenames) + 1)
-        # Finish progress bar
-        progress_bar["value"] = 100
+            progress_bar["value"] = index * 100 / len(filenames)
+            self.mainwindow.update()
+        # Reset progress bar
+        progress_bar["value"] = 0
+        progress_bar.place(x=-200)
+        self.mainwindow.update()
 
 
 if __name__ == "__main__":
