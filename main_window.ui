@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="tk.Frame" id="main_window">
+    <property name="height">170</property>
+    <property name="relief">flat</property>
+    <property name="takefocus">true</property>
+    <property name="width">200</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="label_title">
+        <property name="background">#fff</property>
+        <property name="font">{Sans} 12 {bold}</property>
+        <property name="pady">17</property>
+        <property name="text" translatable="yes">Wolphabet</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="width">200</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="select_files">
+        <property name="activebackground">#cc7e00</property>
+        <property name="activeforeground">#fff</property>
+        <property name="background">#ffb238</property>
+        <property name="command" type="command" cbtype="simple">open_dialog</property>
+        <property name="font">{Sans} 12 {}</property>
+        <property name="foreground">#fff</property>
+        <property name="text" translatable="yes">Select your fonts</property>
+        <layout manager="place">
+          <property name="height">100</property>
+          <property name="width">200</property>
+          <property name="x">0</property>
+          <property name="y">70</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="label_subtitle">
+        <property name="background">#fff</property>
+        <property name="font">{Sans} 10 {}</property>
+        <property name="text" translatable="yes">Font to Woff2
+</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="width">200</property>
+          <property name="x">0</property>
+          <property name="y">38</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Progressbar" id="progressbar">
+        <property name="length">100</property>
+        <property name="orient">horizontal</property>
+        <property name="value">50</property>
+        <layout manager="place">
+          <property name="height">100</property>
+          <property name="width">200</property>
+          <property name="x">-200</property>
+          <property name="y">70</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
