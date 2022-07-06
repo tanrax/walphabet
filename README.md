@@ -6,15 +6,11 @@ Transform your fonts from TTF or OTF to WOFF2.
 
 # Download
 
-## Linux
+Linux -> https://github.com/tanrax/walphabet/releases/download/v1.0/walphabet-linux
 
-## MacOS
+MacOS -> Perhaps in the future.
 
-Perhaps in the future.
-
-## Windows
-
-Perhaps in the future.
+Windows -> Perhaps in the future.
 
 # Development
 
