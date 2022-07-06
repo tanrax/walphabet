@@ -21,7 +21,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[('bin/linux/woff2_compress', 'bin/linux/woff2_compress')],
-    datas=[("main_window.ui", ".")],
+    datas=[("main_window.ui", "."), ("icon.png", ".")],
     hiddenimports=hidden_imports,
     hookspath=[],
     hooksconfig={},

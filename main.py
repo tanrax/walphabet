@@ -2,7 +2,7 @@
 import pathlib
 import pygubu
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog, PhotoImage
 import subprocess
 import os
 
@@ -53,4 +53,6 @@ if __name__ == "__main__":
     app = MainWindowApp(root)
     root.title("Walphabet")
     root.resizable(False, False)
+    icon = PhotoImage(file="icon.png")
+    root.iconphoto(True,icon)
     app.run()
