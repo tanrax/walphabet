@@ -53,6 +53,6 @@ if __name__ == "__main__":
     app = MainWindowApp(root)
     root.title("Walphabet")
     root.resizable(False, False)
-    icon = PhotoImage(file="icon.png")
+    icon = PhotoImage(file=os.path.join(PROJECT_PATH, "icon.png"))
     root.iconphoto(True,icon)
     app.run()
