@@ -7,8 +7,8 @@ block_cipher = None
 a = Analysis(
     ['main.py'],
     pathex=[],
-    binaries=['./bin/linux/woff2_compress'],
-    datas=["main_window.ui"],
+    binaries=[('bin/linux/woff2_compress', 'bin/linux/woff2_compress')],
+    datas=[("main_window.ui", "main_window.ui")],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
