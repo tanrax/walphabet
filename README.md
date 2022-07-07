@@ -12,9 +12,9 @@ Transform your fonts from TTF or OTF to WOFF2.
 
 Linux -> https://github.com/tanrax/walphabet/releases/download/v1.0/walphabet-linux
 
-MacOS -> I need a volunteer with MacOS to create the binary.
+Windows -> https://github.com/tanrax/walphabet/releases/download/v1.0/walphabet.exe
 
-Windows -> I need a volunteer with Windows to create the binary.
+MacOS -> I need a volunteer with MacOS to create the binary.
 
 # Development
 
