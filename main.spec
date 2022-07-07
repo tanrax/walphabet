@@ -20,7 +20,11 @@ hidden_imports = [
 a = Analysis(
     ['main.py'],
     pathex=[],
-    binaries=[('bin/linux/woff2_compress', 'bin/linux/woff2_compress')],
+    binaries=[
+    ('bin/linux/woff2_compress', 'bin/linux/woff2_compress'),
+    ('bin/darwin/woff2_compress', 'bin/darwin/woff2_compress'),
+    ('bin/windows/woff2_compress', 'bin/windows/woff2_compress'),
+    ],
     datas=[("main_window.ui", "."), ("icon.png", ".")],
     hiddenimports=hidden_imports,
     hookspath=[],

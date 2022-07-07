@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+import platform
 import pathlib
 import pygubu
 import tkinter as tk
@@ -9,6 +9,13 @@ import os
 PROJECT_PATH = pathlib.Path(__file__).parent
 
 PROJECT_UI = os.path.join(PROJECT_PATH, "main_window.ui")
+
+PLATFORM = platform.system().lower()
+
+WOFF_COMPRESS_BIN = "woff2_compress"
+
+if PLATFORM == "windows":
+    WOFF_COMPRESS_BIN += ".exe"
 
 
 class MainWindowApp:
@@ -34,7 +41,7 @@ class MainWindowApp:
     def transform_fonts(self, filenames):
         progress_bar = self.mainwindow.nametowidget("!progressbar")
         for index, filename in enumerate(filenames):
-            args = ("./bin/linux/woff2_compress", filename)
+            args = (f"./bin/{PLATFORM}/{WOFF_COMPRESS_BIN}", filename)
             popen = subprocess.Popen(args, stdout=subprocess.PIPE)
             popen.wait()
             # Show progress bar
