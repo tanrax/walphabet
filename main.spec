@@ -23,7 +23,7 @@ a = Analysis(
     binaries=[
     ('bin/linux/woff2_compress', 'bin/linux/woff2_compress'),
     ('bin/darwin/woff2_compress', 'bin/darwin/woff2_compress'),
-    ('bin/windows/woff2_compress', 'bin/windows/woff2_compress'),
+    ('bin/windows/woff2_compress.exe', 'bin/windows/woff2_compress.exe'),
     ],
     datas=[("main_window.ui", "."), ("icon.png", ".")],
     hiddenimports=hidden_imports,
