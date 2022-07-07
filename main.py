@@ -14,10 +14,11 @@ PLATFORM = platform.system().lower()
 
 WOFF_COMPRESS_BIN = "woff2_compress"
 
+WOFF_COMPRESS_PATH = os.path.join(PROJECT_PATH, "bin", PLATFORM, WOFF_COMPRESS_BIN)
+
 if PLATFORM == "windows":
     WOFF_COMPRESS_BIN += ".exe"
-
-WOFF_COMPRESS_PATH = os.path.join(PROJECT_PATH, WOFF_COMPRESS_BIN)
+    WOFF_COMPRESS_PATH = os.path.join(PROJECT_PATH, WOFF_COMPRESS_BIN)
 
 
 class MainWindowApp:
