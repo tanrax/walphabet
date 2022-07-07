@@ -17,6 +17,8 @@ WOFF_COMPRESS_BIN = "woff2_compress"
 if PLATFORM == "windows":
     WOFF_COMPRESS_BIN += ".exe"
 
+WOFF_COMPRESS_PATH = os.path.join(PROJECT_PATH, WOFF_COMPRESS_BIN)
+
 
 class MainWindowApp:
     def __init__(self, master=None):
@@ -41,7 +43,7 @@ class MainWindowApp:
     def transform_fonts(self, filenames):
         progress_bar = self.mainwindow.nametowidget("!progressbar")
         for index, filename in enumerate(filenames):
-            args = (f"./bin/{PLATFORM}/{WOFF_COMPRESS_BIN}", filename)
+            args = (WOFF_COMPRESS_PATH, filename)
             popen = subprocess.Popen(args, stdout=subprocess.PIPE)
             popen.wait()
             # Show progress bar
