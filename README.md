@@ -14,6 +14,8 @@ Linux -> https://github.com/tanrax/walphabet/releases/download/v1.0/walphabet-li
 
 Windows -> https://github.com/tanrax/walphabet/releases/download/v1.0/walphabet.exe
 
+(**Attention!** Windows Defender detects it as a virus because the executable is not signed by them, and I'm not willing to pay 60 euros per year. You have 2 options: add walphabet as an exception or clone the repository and compile your own binary.)
+
 MacOS -> I need a volunteer with MacOS to create the binary.
 
 # Development
