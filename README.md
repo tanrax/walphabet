@@ -4,6 +4,12 @@
 
 Transform your fonts from TTF or OTF to WOFF2 in Windows and Linux.
 
+## Windows
+
+<p align="center">
+  <img src="assets/windows.jpg" width="500" alt="demo">
+</p>
+
 ## Linux: KDE
 
 <p align="center">
