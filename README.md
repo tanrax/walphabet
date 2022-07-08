@@ -2,10 +2,18 @@
 
 <img src="icon.png" width="100" alt="Icon">
 
-Transform your fonts from TTF or OTF to WOFF2.
+Transform your fonts from TTF or OTF to WOFF2 in Windows and Linux.
+
+## Linux: KDE
 
 <p align="center">
-  <img src="assets/preview.png" width="600" alt="demo">
+  <img src="assets/preview.png" width="500" alt="demo">
+</p>
+
+## Linux: Gnome
+
+<p align="center">
+  <img src="assets/gnome.jpg" width="500" alt="demo">
 </p>
 
 # Download
