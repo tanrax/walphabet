@@ -91,3 +91,7 @@ pip3 install pygubu-designer
 ```
 
 and then run `pygubu-designer`.
+
+## Thanks!
+
+- [Sergio Delgado Quitero](https://twitter.com/sdelquin): For all his effort and research for MacOS.
